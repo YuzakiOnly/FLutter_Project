@@ -25,7 +25,7 @@ class _WrapsState extends State<Wraps> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Wrap Example'),
+        title: const Text('Wrap Color Example'),
       ),
       // Mengubah warna latar belakang Scaffold secara keseluruhan
       backgroundColor: backgroundColor, // Latar belakang seluruh aplikasi

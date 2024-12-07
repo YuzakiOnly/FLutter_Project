@@ -26,13 +26,9 @@ class _TabbarState extends State<Tabbar> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Binar - Tabbar"),
-        backgroundColor: Colors.blue, // Warna latar belakang AppBar
+        title: const Text('Travel'),
         bottom: TabBar(
           controller: _tabController,
-          indicatorColor: Colors.white, // Warna indikator tab yang aktif
-          labelColor: Colors.white, // Warna ikon/tab yang aktif
-          unselectedLabelColor: Colors.white70, // Warna ikon/tab yang tidak aktif
           tabs: const [
             Tab(icon: Icon(Icons.directions_boat)),
             Tab(icon: Icon(Icons.directions_bus)),

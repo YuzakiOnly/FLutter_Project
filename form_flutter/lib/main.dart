@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'formcihuy.dart'; // Import file dengan benar
+import 'package:form_flutter/formcihuy.dart'; // Import file dengan benar
 
 void main() {
   runApp(const MyApp());

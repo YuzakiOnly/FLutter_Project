@@ -1,4 +1,8 @@
 import 'package:basic_lay/gridview.dart';
+import 'package:basic_lay/asrat.dart';
+import 'package:basic_lay/listview.dart';
+import 'package:basic_lay/expanded.dart';
+import 'package:basic_lay/wrap.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,14 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'BASIG LAYOUT',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 95, 248, 0),
+          seedColor: const Color.fromARGB(255, 255, 255, 255),
         ),
         useMaterial3: true,
       ),
-      home: Gridviews(), // Pastikan nama class sesuai
+      home: Wraps(), // Pastikan nama class sesuai
     );
   }
 }

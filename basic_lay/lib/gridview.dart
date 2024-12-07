@@ -17,7 +17,7 @@ class Gridviews extends StatelessWidget {
           mainAxisSpacing: 16, // Jarak antar baris
           crossAxisSpacing: 16, // Jarak antar kolom
           children: List.generate(
-            10,
+            20,
             (index) => Container(
               decoration: BoxDecoration(
                 color: Colors.blue,

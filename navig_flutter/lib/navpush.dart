@@ -5,80 +5,65 @@ class NavPushs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
-        title: ShaderMask(
-          shaderCallback: (Rect bounds) {
-            return const LinearGradient(
-              colors: [Colors.blue, Colors.lightBlueAccent],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ).createShader(bounds);
-          },
-          child: const Text(
-            "MASA LALU",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.white, // Ini diperlukan untuk efek ShaderMask
-            ),
-          ),
-        ),
+        title: const Text('Login Cuy'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return const NavigationPop(); // Gunakan kelas yang benar
-                    },
-                  ),
-                );
-              },
-              child: const Text('UTIWI KE MASA DEPAN BOS BOS'),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+          ),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DashboardPage(),
+              ),
+            );
+          },
+          child: const Text(
+            'LOGIN',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
-          ],
+          ),
         ),
       ),
     );
   }
 }
 
-class NavigationPop extends StatelessWidget {
-  const NavigationPop({super.key});
+class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: ShaderMask(
-          shaderCallback: (Rect bounds) {
-            return const LinearGradient(
-              colors: [Colors.blue, Color.fromARGB(255, 255, 0, 0)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ).createShader(bounds);
-          },
-          child: const Text(
-            "MASA DEPAN",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.white, // Ini diperlukan untuk efek ShaderMask
-            ),
-          ),
-        ),
+        title: const Text('Halaman Utama'),
       ),
       body: Center(
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red,
+            padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+          ),
           onPressed: () {
-            Navigator.of(context).pop();
+            Navigator.pop(context);
           },
-          child: const Text("UTIWI KE MASA LALU"),
+          child: const Text(
+            'LOGOUT',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
     );

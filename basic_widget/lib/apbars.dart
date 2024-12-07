@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 /// Flutter code sample for [AppBar].
 
-final List<int> _items = List<int>.generate(15, (int index) => index);
+final List<int> _items = List<int>.generate(51, (int index) => index);
 
-void main() => runApp(const Apbars());
+void main() => runApp(const AppBarApp());
 
-class Apbars extends StatelessWidget {
-  const Apbars({super.key});
+class AppBarApp extends StatelessWidget {
+  const AppBarApp({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ class Texts extends StatelessWidget {
       child: Column(
         children: const [
           Text(
-            'Vano Ganteng Yang Selalu Tersakiti Bosqu',
+            'Jadilah Diri Sendiri',
             style: TextStyle(
               color: Colors.red,
               fontSize: 25.0,

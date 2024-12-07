@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:navig_flutter/botnav.dart';
 import 'package:navig_flutter/drawwer.dart';
@@ -20,11 +19,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 95, 248, 0),
+          seedColor: const Color.fromARGB(255, 255, 255, 255),
         ),
         useMaterial3: true,
       ),
-      home: const HomePage(), // Gunakan nama kelas dengan benar
+      home: const Tabbar(), // Gunakan nama kelas dengan benar
     );
   }
 }
